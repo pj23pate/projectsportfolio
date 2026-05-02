@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Pitch DCF Valuation | Alex Chen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"] },
+          colors: { ink: "#0b0f19", steel: "#344054", line: "#e4e7ec", accent: "#0f766e" },
+          boxShadow: { soft: "0 18px 60px rgba(15, 23, 42, 0.08)" }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body class="bg-white text-ink antialiased">
+  <header class="border-b border-line bg-white">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+      <a href="../index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-ink">
+        <i data-lucide="arrow-left" class="h-4 w-4"></i>
+        Back to Portfolio
+      </a>
+      <a href="mailto:alex.chen@example.com" class="text-sm font-semibold text-steel transition hover:text-ink">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="border-b border-line">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 lg:py-20">
+        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-accent">Investment Banking</p>
+        <div class="mt-4 grid gap-8 lg:grid-cols-[1fr_320px] lg:items-end">
+          <div>
+            <h1 class="text-4xl font-semibold tracking-normal sm:text-5xl">Stock Pitch: DCF Valuation</h1>
+            <p class="mt-5 max-w-3xl text-lg leading-8 text-steel">Fundamental equity research pitch combining discounted cash flow valuation, public company comparables, catalyst analysis, and downside risk framing.</p>
+          </div>
+          <div class="rounded-lg border border-line bg-gray-50 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.16em] text-steel">Recommendation</p>
+            <div class="mt-4 space-y-3 text-sm">
+              <div class="flex justify-between gap-4"><span class="text-steel">Rating</span><span class="font-semibold text-accent">Buy</span></div>
+              <div class="flex justify-between gap-4"><span class="text-steel">Implied Upside</span><span class="font-semibold">24%</span></div>
+              <div class="flex justify-between gap-4"><span class="text-steel">Horizon</span><span class="font-semibold">12 Months</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-5 py-12 sm:px-8">
+      <div class="grid gap-5 md:grid-cols-4">
+        <div class="rounded-lg border border-line p-5">
+          <p class="text-3xl font-semibold">9.2%</p>
+          <p class="mt-2 text-sm text-steel">WACC assumption</p>
+        </div>
+        <div class="rounded-lg border border-line p-5">
+          <p class="text-3xl font-semibold">3.0%</p>
+          <p class="mt-2 text-sm text-steel">Terminal growth rate</p>
+        </div>
+        <div class="rounded-lg border border-line p-5">
+          <p class="text-3xl font-semibold">14.5x</p>
+          <p class="mt-2 text-sm text-steel">Peer EV/EBITDA median</p>
+        </div>
+        <div class="rounded-lg border border-line p-5">
+          <p class="text-3xl font-semibold">24%</p>
+          <p class="mt-2 text-sm text-steel">Base-case upside</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-line bg-gray-50">
+      <div class="mx-auto grid max-w-6xl gap-6 px-5 py-12 sm:px-8 lg:grid-cols-[260px_1fr]">
+        <aside class="h-fit rounded-lg border border-line bg-white p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.16em] text-steel">Tools</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-steel">
+            <span class="rounded-full border border-line px-3 py-1">Excel</span>
+            <span class="rounded-full border border-line px-3 py-1">DCF</span>
+            <span class="rounded-full border border-line px-3 py-1">Comps</span>
+            <span class="rounded-full border border-line px-3 py-1">CapIQ-style Screening</span>
+            <span class="rounded-full border border-line px-3 py-1">Memo Writing</span>
+          </div>
+        </aside>
+
+        <div class="space-y-5">
+          <article class="rounded-lg border border-line bg-white p-6">
+            <h2 class="text-xl font-semibold">Overview</h2>
+            <p class="mt-3 text-sm leading-7 text-steel">The pitch assessed whether the market was undervaluing a high-quality technology-enabled financial services company. The objective was to produce a concise investment recommendation supported by valuation, operating drivers, and catalyst timing.</p>
+          </article>
+          <article class="rounded-lg border border-line bg-white p-6">
+            <h2 class="text-xl font-semibold">Approach</h2>
+            <p class="mt-3 text-sm leading-7 text-steel">Created a three-statement forecast, projected revenue by segment, estimated margin expansion from operating leverage, calculated free cash flow, and triangulated valuation using DCF, EV/EBITDA, and P/E comparables.</p>
+          </article>
+          <article class="rounded-lg border border-line bg-white p-6">
+            <h2 class="text-xl font-semibold">Key Insights</h2>
+            <ul class="mt-3 space-y-3 text-sm leading-7 text-steel">
+              <li>Consensus estimates appeared conservative on recurring revenue growth and medium-term operating margin expansion.</li>
+              <li>The current trading multiple implied limited credit for product-led customer retention and cross-sell potential.</li>
+              <li>Downside was most sensitive to terminal margin assumptions, making execution quality the central underwriting risk.</li>
+            </ul>
+          </article>
+          <article class="rounded-lg border border-line bg-white p-6">
+            <h2 class="text-xl font-semibold">Business Impact</h2>
+            <p class="mt-3 text-sm leading-7 text-steel">The final recommendation packaged valuation, catalysts, and risks into an investment committee-style memo with a clear buy thesis, target price range, downside case, and monitoring plan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-5 py-8 text-sm text-steel sm:px-8 md:flex-row">
+    <span>Alex Chen | Finance x Technology</span>
+    <a class="font-semibold text-ink transition hover:text-accent" href="../index.html#projects">All Projects</a>
+  </footer>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

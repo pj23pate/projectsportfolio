@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Finance and technology portfolio for a University of Waterloo student focused on valuation, risk, analytics, and data-driven strategy." />
+  <title>Alex Chen | Finance x Technology Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+          },
+          colors: {
+            ink: "#0b0f19",
+            steel: "#344054",
+            line: "#e4e7ec",
+            accent: "#0f766e"
+          },
+          boxShadow: {
+            soft: "0 18px 60px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { letter-spacing: 0; }
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white text-ink antialiased">
+  <header class="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+      <a href="#" class="text-sm font-semibold tracking-wide text-ink">Alex Chen</a>
+      <div class="hidden items-center gap-7 text-sm font-medium text-steel md:flex">
+        <a class="transition hover:text-ink" href="#projects">Projects</a>
+        <a class="transition hover:text-ink" href="#resume">Resume</a>
+        <a class="transition hover:text-ink" href="#contact">Contact</a>
+      </div>
+      <a href="mailto:alex.chen@example.com" class="inline-flex items-center gap-2 rounded-md border border-ink px-3 py-2 text-sm font-semibold transition hover:bg-ink hover:text-white">
+        <i data-lucide="mail" class="h-4 w-4"></i>
+        Email
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="border-b border-line">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:py-24">
+        <div class="reveal">
+          <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-line px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-steel">
+            <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+            University of Waterloo
+          </p>
+          <h1 class="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-normal text-ink sm:text-6xl lg:text-7xl">
+            Finance x Technology
+          </h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-steel">
+            Student analyst building rigorous investment research, valuation models, risk frameworks, and decision-ready dashboards for finance, consulting, fintech, and asset management teams.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#projects" class="inline-flex items-center justify-center gap-2 rounded-md bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-black">
+              View Projects
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </a>
+            <a href="#resume" class="inline-flex items-center justify-center gap-2 rounded-md border border-line px-5 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:border-ink">
+              Download Resume
+              <i data-lucide="download" class="h-4 w-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal rounded-lg border border-line bg-gray-50 p-5 shadow-soft">
+          <div class="mb-5 flex items-center justify-between border-b border-line pb-4">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-steel">Analyst Snapshot</p>
+              <h2 class="mt-1 text-xl font-semibold">Research + Analytics</h2>
+            </div>
+            <i data-lucide="bar-chart-3" class="h-6 w-6 text-accent"></i>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="rounded-md border border-line bg-white p-4">
+              <p class="text-3xl font-semibold">4</p>
+              <p class="mt-1 text-sm text-steel">Featured finance projects</p>
+            </div>
+            <div class="rounded-md border border-line bg-white p-4">
+              <p class="text-3xl font-semibold">3</p>
+              <p class="mt-1 text-sm text-steel">Valuation methods</p>
+            </div>
+            <div class="rounded-md border border-line bg-white p-4">
+              <p class="text-3xl font-semibold">95%</p>
+              <p class="mt-1 text-sm text-steel">VaR confidence model</p>
+            </div>
+            <div class="rounded-md border border-line bg-white p-4">
+              <p class="text-3xl font-semibold">5</p>
+              <p class="mt-1 text-sm text-steel">Tools across Python, Excel, R</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-md border border-line bg-white p-4">
+            <div class="mb-3 flex items-center justify-between text-sm">
+              <span class="font-medium text-steel">Core Coverage</span>
+              <span class="font-semibold">Finance, Data, Strategy</span>
+            </div>
+            <div class="h-2 rounded-full bg-gray-200">
+              <div class="h-2 w-[88%] rounded-full bg-accent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-14 sm:px-8">
+      <div class="grid gap-4 md:grid-cols-4">
+        <div class="reveal rounded-lg border border-line p-5 transition hover:-translate-y-1 hover:shadow-soft">
+          <i data-lucide="calculator" class="h-5 w-5 text-accent"></i>
+          <h3 class="mt-4 font-semibold">Valuation</h3>
+          <p class="mt-2 text-sm leading-6 text-steel">DCF, comparables, sensitivity tables, and investment memo writing.</p>
+        </div>
+        <div class="reveal rounded-lg border border-line p-5 transition hover:-translate-y-1 hover:shadow-soft">
+          <i data-lucide="shield-alert" class="h-5 w-5 text-accent"></i>
+          <h3 class="mt-4 font-semibold">Risk</h3>
+          <p class="mt-2 text-sm leading-6 text-steel">VaR, scenario testing, downside protection, and exposure analysis.</p>
+        </div>
+        <div class="reveal rounded-lg border border-line p-5 transition hover:-translate-y-1 hover:shadow-soft">
+          <i data-lucide="building-2" class="h-5 w-5 text-accent"></i>
+          <h3 class="mt-4 font-semibold">Markets</h3>
+          <p class="mt-2 text-sm leading-6 text-steel">Macro, real estate, rates, OECD data, and sector-level case work.</p>
+        </div>
+        <div class="reveal rounded-lg border border-line p-5 transition hover:-translate-y-1 hover:shadow-soft">
+          <i data-lucide="database" class="h-5 w-5 text-accent"></i>
+          <h3 class="mt-4 font-semibold">Dashboards</h3>
+          <p class="mt-2 text-sm leading-6 text-steel">Python, pandas, Excel, Power Query, R, and executive reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="border-y border-line bg-gray-50">
+      <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+        <div class="reveal mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.16em] text-accent">Selected Work</p>
+            <h2 class="mt-3 text-3xl font-semibold tracking-normal sm:text-4xl">Project Portfolio</h2>
+          </div>
+          <p class="max-w-xl text-sm leading-6 text-steel">
+            A recruiter-ready set of analytical work samples spanning investment research, risk management, macro strategy, and data visualization.
+          </p>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2">
+          <article class="reveal rounded-lg border border-line bg-white p-6 transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-steel">Risk Management</p>
+                <h3 class="mt-3 text-xl font-semibold">Risk Analysis Report</h3>
+              </div>
+              <i data-lucide="activity" class="h-6 w-6 text-accent"></i>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-steel">Portfolio downside analysis using VaR, volatility decomposition, sensitivity testing, and stress scenarios.</p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs font-medium text-steel">
+              <span class="rounded-full border border-line px-3 py-1">VaR</span>
+              <span class="rounded-full border border-line px-3 py-1">Excel</span>
+              <span class="rounded-full border border-line px-3 py-1">Python</span>
+              <span class="rounded-full border border-line px-3 py-1">Sensitivity Analysis</span>
+            </div>
+            <a href="projects/risk-analysis.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink transition hover:text-accent">
+              View Project
+              <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+            </a>
+          </article>
+
+          <article class="reveal rounded-lg border border-line bg-white p-6 transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-steel">Investment Banking</p>
+                <h3 class="mt-3 text-xl font-semibold">Stock Pitch: DCF Valuation</h3>
+              </div>
+              <i data-lucide="line-chart" class="h-6 w-6 text-accent"></i>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-steel">Equity research pitch with revenue build, margin assumptions, WACC, terminal value, and comparable trading analysis.</p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs font-medium text-steel">
+              <span class="rounded-full border border-line px-3 py-1">DCF</span>
+              <span class="rounded-full border border-line px-3 py-1">Comps</span>
+              <span class="rounded-full border border-line px-3 py-1">Excel</span>
+              <span class="rounded-full border border-line px-3 py-1">Investment Memo</span>
+            </div>
+            <a href="projects/stock-pitch.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink transition hover:text-accent">
+              View Project
+              <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+            </a>
+          </article>
+
+          <article class="reveal rounded-lg border border-line bg-white p-6 transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-steel">Consulting Case</p>
+                <h3 class="mt-3 text-xl font-semibold">Real Estate Investment Case Study</h3>
+              </div>
+              <i data-lucide="map" class="h-6 w-6 text-accent"></i>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-steel">Market entry analysis using OECD indicators, rates, demographics, rental affordability, and cap rate sensitivity.</p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs font-medium text-steel">
+              <span class="rounded-full border border-line px-3 py-1">OECD</span>
+              <span class="rounded-full border border-line px-3 py-1">Macro</span>
+              <span class="rounded-full border border-line px-3 py-1">Real Estate</span>
+              <span class="rounded-full border border-line px-3 py-1">Case Study</span>
+            </div>
+            <a href="projects/stock-pitch.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink transition hover:text-accent">
+              View Project
+              <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+            </a>
+          </article>
+
+          <article class="reveal rounded-lg border border-line bg-white p-6 transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-steel">Data Analytics</p>
+                <h3 class="mt-3 text-xl font-semibold">Dashboard Project</h3>
+              </div>
+              <i data-lucide="layout-dashboard" class="h-6 w-6 text-accent"></i>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-steel">Interactive performance dashboard translating transaction, market, and KPI data into concise executive views.</p>
+            <div class="mt-5 flex flex-wrap gap-2 text-xs font-medium text-steel">
+              <span class="rounded-full border border-line px-3 py-1">Python</span>
+              <span class="rounded-full border border-line px-3 py-1">pandas</span>
+              <span class="rounded-full border border-line px-3 py-1">Excel</span>
+              <span class="rounded-full border border-line px-3 py-1">R</span>
+            </div>
+            <a href="projects/risk-analysis.html" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink transition hover:text-accent">
+              View Project
+              <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <div class="reveal grid gap-8 rounded-lg border border-line p-6 md:grid-cols-[1fr_auto] md:items-center">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-accent">Resume</p>
+          <h2 class="mt-3 text-3xl font-semibold">Analytical finance profile with technical execution.</h2>
+          <p class="mt-4 max-w-3xl text-sm leading-6 text-steel">Relevant coursework includes corporate finance, accounting, statistics, data structures, econometrics, financial modeling, and business strategy.</p>
+        </div>
+        <a href="resume.pdf" class="inline-flex items-center justify-center gap-2 rounded-md bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-black">
+          Download Resume
+          <i data-lucide="download" class="h-4 w-4"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="border-t border-line bg-ink text-white">
+      <div class="mx-auto max-w-7xl px-5 py-14 sm:px-8">
+        <div class="reveal flex flex-col justify-between gap-8 md:flex-row md:items-center">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.16em] text-teal-300">Contact</p>
+            <h2 class="mt-3 text-3xl font-semibold">Open to finance, fintech, and consulting internships.</h2>
+          </div>
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <a href="mailto:alex.chen@example.com" class="inline-flex items-center justify-center gap-2 rounded-md bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5">
+              <i data-lucide="mail" class="h-4 w-4"></i>
+              alex.chen@example.com
+            </a>
+            <a href="https://www.linkedin.com/" class="inline-flex items-center justify-center gap-2 rounded-md border border-white/25 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10">
+              <i data-lucide="linkedin" class="h-4 w-4"></i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    lucide.createIcons();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
